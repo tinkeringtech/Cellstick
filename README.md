@@ -1,4 +1,4 @@
 cellstick
 =========
 
-Cellstick application source code
+This is the location for the Cellstick example code.
