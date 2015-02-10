@@ -1,17 +1,11 @@
 /***************************************************
-  This is a library for our Adafruit FONA Cellular Module
+  This is a test library for the TinkeringTech CellStick
 
-  Designed specifically to work with the Adafruit FONA
-  ----> http://www.adafruit.com/products/1946
-  ----> http://www.adafruit.com/products/1963
-
-  These displays use TTL Serial to communicate, 2 pins are required to
-  interface
-  Adafruit invests time and resources providing this open source code,
-  please support Adafruit and open-source hardware by purchasing
-  products from Adafruit!
-
-  Written by Limor Fried/Ladyada for Adafruit Industries.
+  This library is based on the Adafruit FONA library written by Limor Fried/Ladyada for Adafruit Industries. Adafruit invests time and resources providing this open source code,
+  please support Adafruit and open-source hardware by purchasing products from Adafruit and Tinkeringtech.
+  
+  www.adafruit.com
+  www.tinkeringtech.com
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 #include <avr/pgmspace.h>
