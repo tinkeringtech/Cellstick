@@ -1,5 +1,6 @@
 /***************************************************
-  This is a test program to test the GPRS on the TinkeringTech CellStick. Insert the SIM, battery and antenna on the CellStick and upload this sketch.
+  This is a test program to test the GPRS on the TinkeringTech CellStick. GPRS is turned on, a webpage read, followed by GPRS turned off.
+  Insert the SIM, battery and antenna on the CellStick and upload this sketch.
   Hold down the the Power key and the BLUE Cellular Netstat light should start blinking.
   Open the Serial terminal at 115200 baud and the sketch will turn on GPRS, connect to a webpage, and then turn off GPRS.
   It may take a few iterations of the loop to get the GPRS turned on.
@@ -37,7 +38,7 @@ Tinkeringtech_CELLSTICK cellstick = Tinkeringtech_CELLSTICK(&cellstickSS, CELLST
 
 void setup() {
   Serial.begin(115200);
-  Serial.println(F("CELLSTICK test"));
+  Serial.println(F("CELLSTICK GPRS test"));
   Serial.println(F("Initializing....(May take 3 seconds)"));
 
   
@@ -71,7 +72,7 @@ void loop() {
       char url[80];
       
       flushSerial();
-      Serial.println(F("ead a smalle webpage"));
+      Serial.println(F("read a small webpage"));
       Serial.println(F("URL to read (e.g. www.adafruit.com/testwifi/index.html):"));
       test="http://www.adafruit.com/testwifi/index.html";
       test.toCharArray(url, 101);
